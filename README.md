@@ -1,4 +1,4 @@
-Perfeito, Diego. Aqui está a explicação sobre **classes abstratas** com uma abordagem mais direta ao ponto, mantendo a clareza e a didática:
+
 
 ---
 

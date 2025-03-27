@@ -1,7 +1,3 @@
-
-
----
-
 Em sistemas orientados a objetos, às vezes criamos classes apenas para **organizar código comum** e **habilitar o polimorfismo**, como `Funcionario`, que serve de base para `Gerente`, `Diretor` etc. A classe `Funcionario` pode ter atributos como `nome`, `cpf` e `salario`, além de métodos como `getBonificacao()`.
 
 No exemplo abaixo, usamos uma referência do tipo `Funcionario` para registrar bonificações de diferentes cargos:

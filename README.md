@@ -26,7 +26,7 @@ Isso impede o uso de `new Funcionario()` e obriga cada subclasse a implementar s
 
 Em resumo: usamos classes abstratas quando queremos criar **modelos genéricos** que **não devem existir sozinhos**, mas sim servir como base para classes mais específicas.
 
-Aqui está a explicação direta e clara sobre **classes abstratas** e **métodos abstratos**:
+
 
 ---
 

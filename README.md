@@ -86,6 +86,8 @@ Dessa forma, o método abstrato garante que cada tipo específico implemente sua
 
 ---
 
+<br>
+
 ### **Outro exemplo: Classe Conta**
 
 Suponha que existam tipos diferentes de contas bancárias que precisam ser atualizadas diariamente, como `ContaCorrente` e `ContaPoupanca`. Cada conta se atualiza de forma diferente, então faz sentido tornar o método `atualiza` abstrato para forçar cada conta a definir sua própria lógica.

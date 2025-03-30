@@ -145,3 +145,6 @@ for (Conta c : contas) {
 Dessa forma, as **classes abstratas** e **métodos abstratos** ajudam a manter o código organizado, consistente e seguro, garantindo que regras específicas sejam sempre implementadas pelas subclasses concretas.
 
 ---
+
+---
+

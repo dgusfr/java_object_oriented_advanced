@@ -1,7 +1,3 @@
-Claro, Diego. Aqui está a lista de **exercícios sobre classes abstratas** com os enunciados reestruturados em **parágrafos contínuos**, com **palavras-chave em destaque**, formulados de forma que o leitor precise **interpretar o problema**, mas com todas as informações necessárias para resolvê-los:
-
----
-
 ### Exercícios – Classes Abstratas
 
 **1.** Observe o comportamento da classe `Conta` em seu sistema. Considere se faz sentido instanciar diretamente um objeto do tipo `Conta`, dado que, na prática, só trabalhamos com `ContaCorrente`, `ContaPoupanca`, entre outros tipos específicos. Analise também quais métodos da classe `Conta` são genéricos demais e poderiam ser definidos como **métodos abstratos**. Faça as alterações necessárias, tornando `Conta` uma **classe abstrata** e marque os métodos adequados com a palavra-chave `abstract`. Em seguida, no `main`, tente instanciar `Conta` e veja o que acontece na **compilação**.
@@ -43,4 +39,3 @@ abstract class Conta {
 
 ---
 
-Se quiser, posso transformar essa lista em PDF ou adicionar um esqueleto de código para cada exercício. Deseja isso?

@@ -28,6 +28,8 @@ Em resumo: usamos classes abstratas quando queremos criar **modelos genéricos**
 
 ---
 
+<br>
+
 ### **Classe Abstrata**
 
 Uma **classe abstrata** é aquela que não pode ser instanciada diretamente. Ela funciona como um **modelo ou rascunho** para suas subclasses. Por exemplo, a classe `Funcionario` é um conceito geral. Não queremos criar objetos que sejam apenas do tipo `Funcionario`, mas sim tipos concretos, como `Gerente` ou `Diretor`.

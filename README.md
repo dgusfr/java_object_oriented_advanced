@@ -26,8 +26,6 @@ Isso impede o uso de `new Funcionario()` e obriga cada subclasse a implementar s
 
 Em resumo: usamos classes abstratas quando queremos criar **modelos genéricos** que **não devem existir sozinhos**, mas sim servir como base para classes mais específicas.
 
-
-
 ---
 
 ### **Classe Abstrata**
@@ -140,6 +138,6 @@ for (Conta c : contas) {
 }
 ```
 
----
-
 Dessa forma, as **classes abstratas** e **métodos abstratos** ajudam a manter o código organizado, consistente e seguro, garantindo que regras específicas sejam sempre implementadas pelas subclasses concretas.
+
+---

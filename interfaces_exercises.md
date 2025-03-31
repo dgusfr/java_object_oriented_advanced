@@ -1,7 +1,3 @@
-Segue abaixo os **exercícios sobre Interfaces** reformulados, com **enunciados claros** e **palavras-chave em negrito**. O leitor deve **interpretar** o que é pedido, mas todas as informações para resolver cada exercício estão presentes:
-
----
-
 ### **Exercício 1 – Sintaxe de Interfaces e Classes que as Implementam**
 
 Considere a seguinte interface:

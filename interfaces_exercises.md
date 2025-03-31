@@ -1,4 +1,4 @@
-### **Exercício 1 – Sintaxe de Interfaces e Classes que as Implementam**
+# **Exercício 1 – Sintaxe de Interfaces e Classes que as Implementam**
 
 Considere a seguinte interface:
 
@@ -31,7 +31,7 @@ Analise por que **herança** não seria apropriada nesse caso, e como as **inter
 
 ---
 
-### **Exercício 2 – Sistema de Tributação**
+# **Exercício 2 – Sistema de Tributação**
 
 Crie uma interface chamada:
 

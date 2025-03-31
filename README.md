@@ -148,11 +148,6 @@ Dessa forma, as **classes abstratas** e **métodos abstratos** ajudam a manter o
 
 ---
 
-
-
-
----
-
 ## **Interfaces**
 
 Imagine que o **Sistema de Controle do Banco** permita acesso a diversos tipos de funcionários, como **Gerentes** e **Diretores**. Cada um deles possui um método `autentica(int senha)`, mas a implementação pode variar bastante:

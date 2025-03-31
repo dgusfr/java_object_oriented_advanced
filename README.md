@@ -150,3 +150,109 @@ Dessa forma, as **classes abstratas** e **métodos abstratos** ajudam a manter o
 
 
 
+
+---
+
+## **Interfaces**
+
+Imagine que o **Sistema de Controle do Banco** permita acesso a diversos tipos de funcionários, como **Gerentes** e **Diretores**. Cada um deles possui um método `autentica(int senha)`, mas a implementação pode variar bastante:
+
+```java
+class Diretor extends Funcionario {
+    public boolean autentica(int senha) {
+        // Verifica se a senha confere (ex: comparar com senha interna)
+    }
+}
+
+class Gerente extends Funcionario {
+    public boolean autentica(int senha) {
+        // Verifica a senha e, além disso, verifica se o departamento tem acesso
+    }
+}
+```
+
+Se criarmos uma classe `SistemaInterno` que receba um `Funcionario` como parâmetro, não será possível chamar `autentica`, pois **nem todo funcionário** tem esse método. Como resolver?
+
+Uma opção seria criar vários métodos `login` sobrecarregados: um para `Gerente`, outro para `Diretor`, e assim por diante. Porém, isso **não escala**: toda nova classe que precise de autenticação exigiria um novo método.
+
+---
+
+## **SOBRECARGA**
+
+Em Java, podemos ter métodos com **mesmo nome e parâmetros diferentes**, o que se chama **sobrecarga** (overloading). Apesar de útil em alguns casos, **overloading** não resolve a questão do método `autentica`, pois ainda estaríamos duplicando código para cada tipo de classe que precisa de autenticação.
+
+---
+
+## **IMPLEMENTS**
+
+Uma abordagem mais adequada seria criar uma **superclasse** intermediária que tenha o método `autentica`. Contudo, isso pode levar a hierarquias sem sentido: e se quisermos que **Clientes** também se autentiquem? Criar `Cliente extends Funcionario` não faz sentido. Para resolver isso de maneira mais flexível, usamos **interfaces**:
+
+```java
+interface Autenticavel {
+    boolean autentica(int senha);
+}
+```
+
+Uma **interface** define um **contrato** que as classes se comprometem a cumprir. Quem implementar essa interface **deve** fornecer o método `autentica`. Com isso, `Gerente` e `Diretor` passam a se declarar como **Autenticaveis**, através de `implements`:
+
+```java
+class Gerente extends Funcionario implements Autenticavel {
+    private int senha;
+    
+    public boolean autentica(int senha) {
+        // Implementação específica de autenticação
+        return this.senha == senha;
+    }
+}
+
+class Diretor extends Funcionario implements Autenticavel {
+    private int senha;
+    
+    public boolean autentica(int senha) {
+        // Implementação própria para Diretor
+        return this.senha == senha;
+    }
+}
+```
+
+Agora podemos criar uma variável do tipo `Autenticavel` e apontá-la para qualquer classe que implemente essa interface. No `SistemaInterno`, basta receber um `Autenticavel`:
+
+```java
+class SistemaInterno {
+    void login(Autenticavel a) {
+        int senha = /* captura da senha ou outra forma de entrada */;
+        boolean ok = a.autentica(senha);
+        
+        // Se ok for true, o usuário entra no sistema
+        // Não importa se é Diretor, Gerente ou qualquer outro tipo
+    }
+}
+```
+
+Se precisarmos que **Cliente** também seja autenticável, basta implementar a interface:
+
+```java
+class Cliente implements Autenticavel {
+    private int senha;
+    
+    public boolean autentica(int senha) {
+        // Autenticação para cliente
+        return this.senha == senha;
+    }
+}
+```
+
+Assim, o `SistemaInterno` não depende de classes específicas, mas apenas do **contrato**. Podemos passar qualquer objeto que seja `Autenticavel`, e a forma como cada classe implementa a autenticação fica livre para variar.
+
+### **Vantagens de Interfaces**
+- **Polimorfismo completo**: qualquer classe que implemente a interface pode ser tratada como `Autenticavel`.  
+- **Menos acoplamento**: se amanhã criarmos uma nova classe que precise se autenticar, basta implementar a interface, sem mexer no restante do código.  
+- **Contratos claros**: todos os métodos da interface precisam ser implementados, deixando explícito o que o objeto faz, sem revelar como faz.
+
+---
+
+### **Dificuldade inicial**
+
+Para alguns iniciantes, pode parecer que escrever interfaces é “trabalho em dobro” pois os métodos terão que ser novamente declarados nas classes que implementam a interface. No entanto, a **flexibilidade** e o **desacoplamento** que as interfaces oferecem são essenciais para sistemas extensíveis e de fácil manutenção.  
+
+Em resumo, **interfaces** permitem tratar objetos com comportamentos semelhantes (ex: “autenticar”) de forma genérica, sem precisar forçar heranças inapropriadas ou duplicar métodos para cada classe.

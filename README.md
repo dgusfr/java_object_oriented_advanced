@@ -178,7 +178,7 @@ Em Java, podemos ter métodos com **mesmo nome e parâmetros diferentes**, o que
 
 ---
 
-## **IMPLEMENTS**
+## **IMPLEMENT**
 
 Uma abordagem mais adequada seria criar uma **superclasse** intermediária que tenha o método `autentica`. Contudo, isso pode levar a hierarquias sem sentido: e se quisermos que **Clientes** também se autentiquem? Criar `Cliente extends Funcionario` não faz sentido. Para resolver isso de maneira mais flexível, usamos **interfaces**:
 

@@ -82,4 +82,3 @@ Por fim, crie um `main` que **instancie** diversos objetos que implementem `Trib
 
 ---
 
-Caso tenha dúvidas, tente executar o código gradualmente e observar possíveis erros de compilação ao não implementar os métodos exigidos pela interface.

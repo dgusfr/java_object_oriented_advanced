@@ -251,3 +251,6 @@ Assim, o `SistemaInterno` não depende de classes específicas, mas apenas do **
 Para alguns iniciantes, pode parecer que escrever interfaces é “trabalho em dobro” pois os métodos terão que ser novamente declarados nas classes que implementam a interface. No entanto, a **flexibilidade** e o **desacoplamento** que as interfaces oferecem são essenciais para sistemas extensíveis e de fácil manutenção.  
 
 Em resumo, **interfaces** permitem tratar objetos com comportamentos semelhantes (ex: “autenticar”) de forma genérica, sem precisar forçar heranças inapropriadas ou duplicar métodos para cada classe.
+
+---
+

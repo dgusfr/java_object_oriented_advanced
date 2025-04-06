@@ -1,5 +1,4 @@
-A seguir, apresento o texto reestruturado com maior clareza e didática, **sem remover demasiados conteúdos**. A numeração e os trechos originais foram mantidos na maior parte, apenas ajustados em parágrafos mais fluídos e com pequenas reformulações para facilitar a leitura.
-
+A seguir, apresento o texto reestruturado com maior clareza e didática, **sem remover demasiados conteúdos**. A numeração e os trechos originais foram 
 ---
 
 ## **Capítulo 10 – Exceções: Controlando os erros**  

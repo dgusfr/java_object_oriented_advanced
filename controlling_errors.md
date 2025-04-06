@@ -2,7 +2,7 @@
 
 
 
-> - **criar novos tipos de erros** para melhorar o tratamento de falhas em sua aplicação ou biblioteca;  
+
 > - **assegurar** que um método funcione como descrito em seu “contrato”.  
 
 ---

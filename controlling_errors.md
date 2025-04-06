@@ -293,4 +293,3 @@ Uma prática ruim é sempre capturar ou lançar `Exception`, pois isso **general
 
 ---
 
-**Concluindo**, as exceções formam a base do tratamento de erros em Java. Elas obrigam o desenvolvedor a decidir se tratará o problema ou se o repassará ao chamador. Esse mecanismo traz robustez e clareza ao sistema, evitando comportamentos indesejados e facilitando a manutenção do código.

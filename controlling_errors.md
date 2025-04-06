@@ -1,4 +1,3 @@
-A seguir, apresento o texto reestruturado com maior clareza e didática, **sem remover demasiados conteúdos**. A numeração e os trechos originais foram 
 ---
 
 ## **Capítulo 10 – Exceções: Controlando os erros**  

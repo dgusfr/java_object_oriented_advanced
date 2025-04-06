@@ -3,10 +3,6 @@
 
 
 
-> - **assegurar** que um método funcione como descrito em seu “contrato”.  
-
----
-
 ### **10.1 – Exceção**
 
 Retomando o exemplo das **Contas** do capítulo 6: se alguém tentar **sacar** além do limite, o que ocorre? O sistema pode até mostrar uma mensagem de erro, mas quem chamou o método `saca` não fica sabendo que a operação falhou. Como “avisar” para o chamador que o método não conseguiu fazer o que deveria?

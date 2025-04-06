@@ -1,7 +1,6 @@
----
+#  Exceções: Controlando os erros
 
-## **Capítulo 10 – Exceções: Controlando os erros**  
-> “Ao término desse capítulo, você será capaz de:  
+
 > - **controlar erros** e tomar decisões baseadas neles;  
 > - **criar novos tipos de erros** para melhorar o tratamento de falhas em sua aplicação ou biblioteca;  
 > - **assegurar** que um método funcione como descrito em seu “contrato”.  

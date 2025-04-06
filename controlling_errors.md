@@ -1,7 +1,7 @@
 #  Exceções: Controlando os erros
 
 
-> - **controlar erros** e tomar decisões baseadas neles;  
+
 > - **criar novos tipos de erros** para melhorar o tratamento de falhas em sua aplicação ou biblioteca;  
 > - **assegurar** que um método funcione como descrito em seu “contrato”.  
 
